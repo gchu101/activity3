@@ -1,21 +1,23 @@
               //base class
 class Person {
-  //attributtes
-  String name;
+
+  //attributes
+
+  String _name; //private
   int age;
   String address;
 
-  Person(this.name, this.age, this.address);
+  Person(this._name, this.age, this.address);
 
         //getter and setter 
   
   // Getter for name
-  String get nname => name;
+  String get name => _name;
 
   // Setter for name with validation
-  set nname(String newName) {
+  set name(String newName) {
     if (newName.isNotEmpty) {
-      name = newName;
+      _name = newName;
     }
   }
 
@@ -23,7 +25,7 @@ class Person {
 
 // Method display person details
   String displayDetails() {
-    return 'Name : $name , Age : $age , Address : $address';
+    return 'Name : $_name , Age : $age , Address : $address';
   }
 // Method to check if the person is an adult 
   bool isAdult() {

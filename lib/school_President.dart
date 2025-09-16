@@ -16,7 +16,7 @@ class President extends Person {
     return '${super.displayDetails()}, President ID : $presidentId , SchoolName : $schoolName , Years of Service : $yearsOfService years';
   }
 
-  String manageSchool() {
-    return '$name is managing $schoolName.';
+  String manageschool() {
+    return 'Managing school: $schoolName';
   }
 }
